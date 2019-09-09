@@ -1,0 +1,36 @@
+{
+  "name": "new.jupyter.github.io",
+  "version": "1.0.0",
+  "description": "This is the playground for the new Jupyter.org. Expect great, or at least slightly better than mediocre, things.",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --open",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tgeorgeux/new.jupyter.github.io.git"
+  },
+  "author": "",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/tgeorgeux/new.jupyter.github.io/issues"
+  },
+  "homepage": "https://github.com/tgeorgeux/new.jupyter.github.io#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.0"
+  },
+  "dependencies": {
+    "core-js": "^3.2.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "regenerator-runtime": "^0.13.3"
+  }
+}
