@@ -1,6 +1,6 @@
-import React from "react";
+import React, { ButtonHTMLAttributes } from "react";
 
-function Button(props) {
+function Button(props: ButtonHTMLAttributes<HTMLButtonElement>) {
   return (
     <button {...props}>
       Hello {props.children}!
