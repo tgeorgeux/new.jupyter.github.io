@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const H5Text = styled.div`
+const H5Text = styled.h5`
 font-family: Helvetica Neue;
 font-size: 24px;
 line-height: 29px;
