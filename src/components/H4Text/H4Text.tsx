@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const H4Text = styled.div`
+const H4Text = styled.h4`
 font-family: Helvetica Neue;
 font-size: 34px;
 line-height: 42px;
