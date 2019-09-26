@@ -8,6 +8,9 @@ I will populate a prioritized hit list.
 
 ## Contributing
 
+We use TypeScript and React in this project.
+
+
 When developing: `npm run dev` to see it in action!
 
 For production: `npm run build` will generate production-ready HTML in `dist/`.
