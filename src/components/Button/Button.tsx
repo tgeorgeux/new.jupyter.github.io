@@ -1,6 +1,6 @@
 import React, { ButtonHTMLAttributes } from "react";
-import ButtonOutline from "../ButtonOutline";
-import ButtonText from "../ButtonText";
+import ButtonOutline from "./ButtonOutline";
+import ButtonText from "./ButtonText";
 import { ThemeProvider } from "styled-components";
 import ButtonMode from './ButtonMode';
 
