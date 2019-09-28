@@ -18,8 +18,7 @@ import Body1Text from "./components/Body1Text";
 import Body2Text from "./components/Body2Text";
 import CaptionText from "./components/CaptionText";
 import OverlineText from "./components/OverlineText";
-import ButtonText from "./components/ButtonText";
-import {Button, ButtonMode} from "./components/Button";
+import {Button, ButtonMode, ButtonText} from "./components/Button";
 
 // code
 ReactDOM.render(
