@@ -13,13 +13,13 @@ interface ButtonTheme {
 }
 
 const getTheme = (mode: ButtonMode): ButtonTheme => {
-  if (ButtonMode.Contained === mode) {
+  if ("contained" === mode) {
     return {
       background: '#F37724',
       backgroundHover: '#F37724',
       fontWeightHover: 600,
     };
-  } else if (ButtonMode.Outline === mode) {
+  } else if ("outline" === mode) {
     return {
       unclickedColor: "#F37724",
     };
