@@ -1,3 +1,4 @@
 import Button from './Button';
+import ButtonMode from './ButtonMode';
 
-export default Button;
+export {Button, ButtonMode};
