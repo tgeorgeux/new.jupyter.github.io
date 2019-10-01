@@ -1,3 +1,7 @@
-export type ButtonMode = "contained" | "outline" | "text";
+export enum ButtonMode {
+    Contained,
+    Outline,
+    Text
+}
 
 export default ButtonMode;
