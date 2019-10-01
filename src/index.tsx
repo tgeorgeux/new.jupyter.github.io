@@ -18,11 +18,23 @@ import Body1Text from "./components/Body1Text";
 import Body2Text from "./components/Body2Text";
 import CaptionText from "./components/CaptionText";
 import OverlineText from "./components/OverlineText";
-import ButtonText from "./components/ButtonText";
+import {Button, ButtonMode, ButtonText} from "./components/Button";
 
 // code
 ReactDOM.render(
     <div>
+    <Button onClick={console.log} mode={ButtonMode.Contained}>
+        Button Label
+    </Button>
+    <hr/>
+    <Button onClick={console.log} mode={ButtonMode.Outline}>
+        Button Label
+    </Button>
+    <hr/>
+    <Button onClick={console.log} mode={ButtonMode.Text}>
+        Button Label
+    </Button>
+    <hr/>
     <H1Text>H1</H1Text>
     <H2Text>H2</H2Text>
     <H3Text>H3</H3Text>
