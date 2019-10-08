@@ -11,23 +11,23 @@ function NavFooter(props: HTMLAttributes<HTMLDivElement>) {
 
  const footerTextStyle: CSSProperties = {
   textAlign: "center",
-  paddingTop: "63px",
+  paddingTop: "60px",
 }
 
 const footerIconStyle: CSSProperties = {
-  maxHeight: "30px",
+  maxHeight: "36px",
   display: "inline-block",
 }
 
 const footerCenterIconStyle: CSSProperties = {
   ...footerIconStyle,
-  paddingLeft: "85px",
-  paddingRight: "85px",
+  paddingLeft: "80px",
+  paddingRight: "80px",
 }
 
 const footerIconRowStyle: CSSProperties = {
-  paddingTop: "60px",
-  maxHeight: "30px",
+  paddingTop: "54px",
+  maxHeight: "36px",
   textAlign: "center",
 }
 
