@@ -8,6 +8,7 @@
     "dev": "npm run check-types && webpack-dev-server --open",
     "build": "npm run check-types && webpack --mode production",
     "lint": "eslint './src/**/*.{ts,tsx}'",
+    "lint-fix": "eslint './src/**/*.{ts,tsx}' --fix",
     "check-types": "tsc"
   },
   "repository": {

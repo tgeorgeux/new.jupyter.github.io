@@ -1,17 +1,17 @@
-import React, { ButtonHTMLAttributes } from "react";
-import ButtonOutline from "./ButtonOutline";
-import ButtonText from "./ButtonText";
-import { ThemeProvider } from "styled-components";
+import React, { ButtonHTMLAttributes } from 'react';
+import ButtonOutline from './ButtonOutline';
+import ButtonText from './ButtonText';
+import { ThemeProvider } from 'styled-components';
 import ButtonMode from './ButtonMode';
-import { getTheme } from "./ButtonTheme";
+import { getTheme } from './ButtonTheme';
 
-function Button(props: ButtonHTMLAttributes<HTMLButtonElement> & {mode: ButtonMode}) {
+function Button(
+  props: ButtonHTMLAttributes<HTMLButtonElement> & { mode: ButtonMode }
+) {
   return (
     <ThemeProvider theme={getTheme(props.mode)}>
       <ButtonOutline {...props}>
-          <ButtonText>
-            {props.children}
-          </ButtonText>
+        <ButtonText>{props.children}</ButtonText>
       </ButtonOutline>
     </ThemeProvider>
   );
