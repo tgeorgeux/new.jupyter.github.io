@@ -19,10 +19,12 @@ import Body2Text from "./components/Body2Text";
 import CaptionText from "./components/CaptionText";
 import OverlineText from "./components/OverlineText";
 import {Button, ButtonMode, ButtonText} from "./components/Button";
+import NavFooter from "./components/NavFooter";
 
 // code
 ReactDOM.render(
     <div>
+    <NavFooter/>
     <Button onClick={console.log} mode={ButtonMode.Contained}>
         Button Label
     </Button>
