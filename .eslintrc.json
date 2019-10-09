@@ -1,25 +1,36 @@
 {
-    "extends": [
-      "eslint:recommended",
-      "plugin:react/recommended",
-      "plugin:@typescript-eslint/recommended",
-      "prettier/@typescript-eslint",
-      "plugin:prettier/recommended"
-    ],
-    "plugins": ["react", "@typescript-eslint", "prettier"],
     "env": {
-      "browser": true,
-      "jasmine": true,
-      "jest": true
+        "browser": true,
+        "es6": true,
+        "node": true
     },
+    "extends": [
+        "airbnb",
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "prettier/@typescript-eslint",
+        "plugin:prettier/recommended",
+        "prettier/react"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint",
+        "prettier"
+    ],
     "rules": {
-      "prettier/prettier": ["error", { "singleQuote": true }]
-    },
-    "settings": {
-      "react": {
-        "pragma": "React",
-        "version": "detect"
-      }
-    },
-    "parser": "@typescript-eslint/parser"
-  }
+        "prettier/prettier": ["error", { "singleQuote": true }]
+    }
+}
