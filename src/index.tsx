@@ -20,10 +20,17 @@ import CaptionText from "./components/CaptionText";
 import OverlineText from "./components/OverlineText";
 import {Button, ButtonMode, ButtonText} from "./components/Button";
 import NavFooter from "./components/NavFooter";
+import TinySection from "./components/TinySection";
 
 // code
 ReactDOM.render(
     <div>
+    <TinySection icon="academia" header="Academia" body="Teaching students at Harvard, Columbia, and MIT." />
+    <TinySection textAlign="right" header="Scientific computing" body="Explain your thought process step-by-step and tell a story with visualizations."/>
+    <TinySection header="Data Science" body="Run individual code blocks so you can test as you go and see results immediately."/>
+    <TinySection width="300px" header="Support us" textAlign="center" body="Make a donation and help us achieve our goal of open science for all.">
+        <Button onClick={console.log} mode={ButtonMode.Contained}>Outline</Button>
+    </TinySection>
     <NavFooter/>
     <Button onClick={console.log} mode={ButtonMode.Contained}>
         Button Label
