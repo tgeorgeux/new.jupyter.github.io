@@ -1,6 +1,6 @@
 import { ButtonMode } from '.';
 
-export interface ButtonTheme {
+export default interface ButtonTheme {
   border?: string;
   background?: string;
   backgroundHover?: string;
