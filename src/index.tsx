@@ -18,13 +18,48 @@ import Body1Text from './components/Body1Text';
 import Body2Text from './components/Body2Text';
 import CaptionText from './components/CaptionText';
 import OverlineText from './components/OverlineText';
-import { Button, ButtonMode, ButtonText } from './components/Button';
+import Button, { ButtonMode, ButtonText } from './components/Button';
 import NavFooter from './components/NavFooter';
 import TinySection from './components/TinySection';
+import HeadlineSection, { ImageTypes } from './components/HeadlineSection';
 
 // code
 ReactDOM.render(
   <div>
+    <HeadlineSection
+      header="Free, open source tools"
+      body="Jupyter technology is the standard for workflows in data science, machine learning, and more."
+    />
+    <HeadlineSection
+      image={ImageTypes.worldwideCommunity}
+      imageLocation="right"
+      imageStyle={{ height: '350px' }}
+      header="Leadership"
+      body=""
+    >
+      <Body1Text>
+        Today, Perez serves as the organization’s leader. Granger oversees all
+        the operations and logistics.
+      </Body1Text>
+      <Body1Text>
+        A team of core contributors makes up the Steering Council. They help
+        ensure the long-term success of the project.
+      </Body1Text>
+      <Button
+        style={{ marginTop: '16px' }}
+        onClick={console.log}
+        mode={ButtonMode.Contained}
+      >
+        Learn More
+      </Button>
+    </HeadlineSection>
+    <HeadlineSection
+      image={ImageTypes.history2}
+      imageStyle={{ marginTop: '-75px', width: '400px' }}
+      header="Why use Jupyter?"
+      body="Our tools can support interactive computing and data analysis across any programming language."
+      imageLocation="left"
+    />
     <TinySection
       icon="academia"
       header="Academia"

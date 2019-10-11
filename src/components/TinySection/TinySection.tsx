@@ -8,7 +8,7 @@ export interface TinySectionProps {
   icon?: string;
   textAlign?: 'left' | 'right' | 'center';
   width?: string;
-  children?: JSX.Element;
+  children?: JSX.Element | JSX.Element[];
 }
 
 export default function TinySection(props: TinySectionProps): JSX.Element {
