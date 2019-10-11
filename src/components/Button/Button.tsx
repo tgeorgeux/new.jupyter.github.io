@@ -7,7 +7,7 @@ import { getTheme } from './ButtonTheme';
 
 function Button(
   props: ButtonHTMLAttributes<HTMLButtonElement> & { mode: ButtonMode }
-) {
+): JSX.Element {
   return (
     <ThemeProvider theme={getTheme(props.mode)}>
       <ButtonOutline {...props}>

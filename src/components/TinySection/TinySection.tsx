@@ -1,4 +1,4 @@
-import React, { HTMLAttributes } from 'react';
+import React from 'react';
 import H4Text from '../H4Text';
 import Subtitle2Text from '../Subtitle2Text';
 
@@ -11,7 +11,7 @@ export interface TinySectionProps {
   children?: JSX.Element;
 }
 
-export default function TinySection(props: TinySectionProps) {
+export default function TinySection(props: TinySectionProps): JSX.Element {
   return (
     <div
       style={{

@@ -1,6 +1,6 @@
 import { ButtonMode } from '.';
 
-interface ButtonTheme {
+export interface ButtonTheme {
   border?: string;
   background?: string;
   backgroundHover?: string;
@@ -27,4 +27,4 @@ const getTheme = (mode: ButtonMode): ButtonTheme => {
   }
 };
 
-export { ButtonTheme, getTheme };
+export { getTheme };

@@ -1,7 +1,7 @@
 import React, { HTMLAttributes, CSSProperties } from 'react';
 import Body2Text from '../Body2Text';
 
-function NavFooter(props: HTMLAttributes<HTMLDivElement>) {
+function NavFooter(props: HTMLAttributes<HTMLDivElement>): JSX.Element {
   const footerStyle: CSSProperties = {
     width: '100%',
     height: '300px',
