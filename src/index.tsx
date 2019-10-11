@@ -26,7 +26,17 @@ import HeadlineSection, { ImageTypes } from './components/HeadlineSection';
 // code
 ReactDOM.render(
   <div>
-    <HeadlineSection header="Leadership" body="">
+    <HeadlineSection
+      header="Free, open source tools"
+      body="Jupyter technology is the standard for workflows in data science, machine learning, and more."
+    />
+    <HeadlineSection
+      image={ImageTypes.worldwideCommunity}
+      imageLocation="right"
+      imageStyle={{ height: '350px' }}
+      header="Leadership"
+      body=""
+    >
       <Body1Text>
         Today, Perez serves as the organization’s leader. Granger oversees all
         the operations and logistics.
@@ -44,9 +54,11 @@ ReactDOM.render(
       </Button>
     </HeadlineSection>
     <HeadlineSection
-      image={ImageTypes.history1}
+      image={ImageTypes.history2}
+      imageStyle={{ marginTop: '-75px', width: '400px' }}
       header="Why use Jupyter?"
       body="Our tools can support interactive computing and data analysis across any programming language."
+      imageLocation="left"
     />
     <TinySection
       icon="academia"
