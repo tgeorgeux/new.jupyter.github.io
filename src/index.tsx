@@ -1,10 +1,10 @@
 // for polyfills
-import "core-js/stable";
-import "regenerator-runtime/runtime";
+import 'core-js/stable';
+import 'regenerator-runtime/runtime';
 
 // imports
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 import H1Text from "./components/H1Text";
 import H2Text from "./components/H2Text";
@@ -33,17 +33,17 @@ ReactDOM.render(
     </TinySection>
     <NavFooter/>
     <Button onClick={console.log} mode={ButtonMode.Contained}>
-        Button Label
+      Button Label
     </Button>
-    <hr/>
+    <hr />
     <Button onClick={console.log} mode={ButtonMode.Outline}>
-        Button Label
+      Button Label
     </Button>
-    <hr/>
+    <hr />
     <Button onClick={console.log} mode={ButtonMode.Text}>
-        Button Label
+      Button Label
     </Button>
-    <hr/>
+    <hr />
     <H1Text>H1</H1Text>
     <H2Text>H2</H2Text>
     <H3Text>H3</H3Text>
@@ -57,6 +57,6 @@ ReactDOM.render(
     <ButtonText>Button</ButtonText>
     <CaptionText>Caption</CaptionText>
     <OverlineText>Overline</OverlineText>
-    </div>,
-    document.querySelector("#main")
+  </div>,
+  document.querySelector('#main')
 );
