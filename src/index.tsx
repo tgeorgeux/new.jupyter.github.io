@@ -6,32 +6,50 @@ import 'regenerator-runtime/runtime';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import H1Text from "./components/H1Text";
-import H2Text from "./components/H2Text";
-import H3Text from "./components/H3Text";
-import H4Text from "./components/H4Text";
-import H5Text from "./components/H5Text";
-import H6Text from "./components/H6Text";
-import Subtitle1Text from "./components/Subtitle1Text";
-import Subtitle2Text from "./components/Subtitle2Text";
-import Body1Text from "./components/Body1Text";
-import Body2Text from "./components/Body2Text";
-import CaptionText from "./components/CaptionText";
-import OverlineText from "./components/OverlineText";
-import {Button, ButtonMode, ButtonText} from "./components/Button";
-import NavFooter from "./components/NavFooter";
-import TinySection from "./components/TinySection";
+import H1Text from './components/H1Text';
+import H2Text from './components/H2Text';
+import H3Text from './components/H3Text';
+import H4Text from './components/H4Text';
+import H5Text from './components/H5Text';
+import H6Text from './components/H6Text';
+import Subtitle1Text from './components/Subtitle1Text';
+import Subtitle2Text from './components/Subtitle2Text';
+import Body1Text from './components/Body1Text';
+import Body2Text from './components/Body2Text';
+import CaptionText from './components/CaptionText';
+import OverlineText from './components/OverlineText';
+import { Button, ButtonMode, ButtonText } from './components/Button';
+import NavFooter from './components/NavFooter';
+import TinySection from './components/TinySection';
 
 // code
 ReactDOM.render(
-    <div>
-    <TinySection icon="academia" header="Academia" body="Teaching students at Harvard, Columbia, and MIT." />
-    <TinySection textAlign="right" header="Scientific computing" body="Explain your thought process step-by-step and tell a story with visualizations."/>
-    <TinySection header="Data Science" body="Run individual code blocks so you can test as you go and see results immediately."/>
-    <TinySection width="300px" header="Support us" textAlign="center" body="Make a donation and help us achieve our goal of open science for all.">
-        <Button onClick={console.log} mode={ButtonMode.Contained}>Outline</Button>
+  <div>
+    <TinySection
+      icon="academia"
+      header="Academia"
+      body="Teaching students at Harvard, Columbia, and MIT."
+    />
+    <TinySection
+      textAlign="right"
+      header="Scientific computing"
+      body="Explain your thought process step-by-step and tell a story with visualizations."
+    />
+    <TinySection
+      header="Data Science"
+      body="Run individual code blocks so you can test as you go and see results immediately."
+    />
+    <TinySection
+      width="300px"
+      header="Support us"
+      textAlign="center"
+      body="Make a donation and help us achieve our goal of open science for all."
+    >
+      <Button onClick={console.log} mode={ButtonMode.Contained}>
+        Outline
+      </Button>
     </TinySection>
-    <NavFooter/>
+    <NavFooter />
     <Button onClick={console.log} mode={ButtonMode.Contained}>
       Button Label
     </Button>
