@@ -1,42 +1,42 @@
 // for polyfills
-import "core-js/stable";
-import "regenerator-runtime/runtime";
+import 'core-js/stable';
+import 'regenerator-runtime/runtime';
 
 // imports
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-import H1Text from "./components/H1Text";
-import H2Text from "./components/H2Text";
-import H3Text from "./components/H3Text";
-import H4Text from "./components/H4Text";
-import H5Text from "./components/H5Text";
-import H6Text from "./components/H6Text";
-import Subtitle1Text from "./components/Subtitle1Text";
-import Subtitle2Text from "./components/Subtitle2Text";
-import Body1Text from "./components/Body1Text";
-import Body2Text from "./components/Body2Text";
-import CaptionText from "./components/CaptionText";
-import OverlineText from "./components/OverlineText";
-import {Button, ButtonMode, ButtonText} from "./components/Button";
-import NavFooter from "./components/NavFooter";
+import H1Text from './components/H1Text';
+import H2Text from './components/H2Text';
+import H3Text from './components/H3Text';
+import H4Text from './components/H4Text';
+import H5Text from './components/H5Text';
+import H6Text from './components/H6Text';
+import Subtitle1Text from './components/Subtitle1Text';
+import Subtitle2Text from './components/Subtitle2Text';
+import Body1Text from './components/Body1Text';
+import Body2Text from './components/Body2Text';
+import CaptionText from './components/CaptionText';
+import OverlineText from './components/OverlineText';
+import { Button, ButtonMode, ButtonText } from './components/Button';
+import NavFooter from './components/NavFooter';
 
 // code
 ReactDOM.render(
-    <div>
-    <NavFooter/>
+  <div>
+    <NavFooter />
     <Button onClick={console.log} mode={ButtonMode.Contained}>
-        Button Label
+      Button Label
     </Button>
-    <hr/>
+    <hr />
     <Button onClick={console.log} mode={ButtonMode.Outline}>
-        Button Label
+      Button Label
     </Button>
-    <hr/>
+    <hr />
     <Button onClick={console.log} mode={ButtonMode.Text}>
-        Button Label
+      Button Label
     </Button>
-    <hr/>
+    <hr />
     <H1Text>H1</H1Text>
     <H2Text>H2</H2Text>
     <H3Text>H3</H3Text>
@@ -50,6 +50,6 @@ ReactDOM.render(
     <ButtonText>Button</ButtonText>
     <CaptionText>Caption</CaptionText>
     <OverlineText>Overline</OverlineText>
-    </div>,
-    document.querySelector("#main")
+  </div>,
+  document.querySelector('#main')
 );
