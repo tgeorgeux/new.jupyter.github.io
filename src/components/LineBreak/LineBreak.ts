@@ -5,7 +5,7 @@ const LineBreak = styled.hr`
   border-bottom: 0;
   border-left: 0;
   border-right: 0;
-  border-top: 1px solid #9e9e9e;
+  border-top: thin solid #9e9e9e !important;
   margin-left: auto;
   margin-right: auto;
 `;
