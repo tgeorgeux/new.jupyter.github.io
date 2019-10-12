@@ -4,7 +4,7 @@ import Subtitle2Text from '../Subtitle2Text';
 
 export interface TinySectionProps {
   header: string;
-  body: string;
+  body: string | JSX.Element;
   icon?: string;
   textAlign?: 'left' | 'right' | 'center';
   width?: string;
@@ -17,15 +17,15 @@ export default function TinySection(props: TinySectionProps): JSX.Element {
       style={{
         width: props.width || '328px',
         minHeight: '100px',
-        display: 'flex',
+        display: 'inline-flex',
         textAlign: props.textAlign || 'left'
       }}
     >
       {props.icon && (
-        <div style={{ minWidth: '48px', paddingTop: '6px' }}>
+        <div style={{ minWidth: '48px' }}>
           <a href="http://homepages.cae.wisc.edu/~ece533/images/airplane.png">
             <img
-              style={{ maxHeight: '36px' }}
+              style={{ maxHeight: '36px', marginTop: '6px' }}
               src="http://homepages.cae.wisc.edu/~ece533/images/airplane.png"
             ></img>
           </a>
