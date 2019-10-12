@@ -27,6 +27,7 @@ export default function HeadlineSection(props: TinySectionProps): JSX.Element {
       <div>
         <H2Text
           style={{
+            width: props.image ? '450px' : 'inherit',
             color: '#4D4D4D',
             marginTop: '0',
             marginBottom: '32px'
