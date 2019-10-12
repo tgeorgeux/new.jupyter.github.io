@@ -31,6 +31,13 @@ function NavFooter(props: HTMLAttributes<HTMLDivElement>): JSX.Element {
     textAlign: 'center'
   };
 
+  const today = new Date().toLocaleDateString('en-US', {
+    weekday: 'short',
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric'
+  });
+
   return (
     <div style={footerStyle} {...props}>
       <div style={footerIconRowStyle}>
@@ -55,7 +62,7 @@ function NavFooter(props: HTMLAttributes<HTMLDivElement>): JSX.Element {
       </div>
       <div style={footerTextStyle}>
         <Body2Text>Copyright ©️ 2019 Project Jupyter</Body2Text>
-        <Body2Text>Last updated Fri, Oct 4, 2019</Body2Text>
+        <Body2Text>Last updated {today}</Body2Text>
         <br />
         <Body2Text>
           The Jupyter Trademark is registered with the U.S. Patent &
