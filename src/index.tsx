@@ -23,25 +23,29 @@ import NavFooter from './components/NavFooter';
 import TinySection from './components/TinySection';
 import HeadlineSection, { ImageTypes } from './components/HeadlineSection';
 import FlexRow from './components/FlexRow';
+import LineBreak from './components/LineBreak';
 
 // code
 ReactDOM.render(
   <div>
-    <HeadlineSection
-      header="Free, open source tools"
-      body="Jupyter technology is the standard for workflows in data science, machine learning, and more."
-    />
-    <FlexRow>
-      <TinySection
-        header="Data science"
-        body="Run individual code blocks so you can test as you go and see results immediately."
+    <div>
+      <HeadlineSection
+        header="Free, open source tools"
+        body="Jupyter technology is the standard for workflows in data science, machine learning, and more."
       />
-      <TinySection
-        header="Scientific computing"
-        body="Explain your thought process step-by-step and tell a story with visualizations."
-        textAlign="right"
-      />
-    </FlexRow>
+      <FlexRow>
+        <TinySection
+          header="Data science"
+          body="Run individual code blocks so you can test as you go and see results immediately."
+        />
+        <TinySection
+          header="Scientific computing"
+          body="Explain your thought process step-by-step and tell a story with visualizations."
+          textAlign="right"
+        />
+      </FlexRow>
+    </div>
+    <LineBreak />
     <FlexRow>
       <TinySection
         header="Machine Learning"
