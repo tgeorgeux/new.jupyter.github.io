@@ -25,10 +25,12 @@ import HeadlineSection, { ImageTypes } from './components/HeadlineSection';
 import FlexRow from './components/FlexRow';
 import LineBreak from './components/LineBreak';
 import ContentBlock from './components/ContentBlock';
+import Navbar from './components/Navbar';
 
 // code
 ReactDOM.render(
   <div>
+    <Navbar current="home" />
     <ContentBlock>
       <HeadlineSection
         header="Free, open source tools"
