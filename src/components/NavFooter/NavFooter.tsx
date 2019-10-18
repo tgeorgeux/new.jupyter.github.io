@@ -42,22 +42,13 @@ function NavFooter(props: HTMLAttributes<HTMLDivElement>): JSX.Element {
     <div style={footerStyle} {...props}>
       <div style={footerIconRowStyle}>
         <a href="http://homepages.cae.wisc.edu/~ece533/images/airplane.png">
-          <img
-            style={footerIconStyle}
-            src="http://homepages.cae.wisc.edu/~ece533/images/airplane.png"
-          ></img>
+          <img style={footerIconStyle} src="images/mail.svg"></img>
         </a>
         <a href="http://homepages.cae.wisc.edu/~ece533/images/airplane.png">
-          <img
-            style={footerCenterIconStyle}
-            src="http://homepages.cae.wisc.edu/~ece533/images/airplane.png"
-          ></img>
+          <img style={footerCenterIconStyle} src="images/twitter.svg"></img>
         </a>
         <a href="http://homepages.cae.wisc.edu/~ece533/images/airplane.png">
-          <img
-            style={footerIconStyle}
-            src="http://homepages.cae.wisc.edu/~ece533/images/airplane.png"
-          ></img>
+          <img style={footerIconStyle} src="images/github.svg"></img>
         </a>
       </div>
       <div style={footerTextStyle}>
