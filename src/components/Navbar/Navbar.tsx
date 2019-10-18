@@ -43,17 +43,14 @@ export default function Navbar(props: NavbarProps): JSX.Element {
           paddingTop: '16px'
         }}
       >
-        <a href="http://homepages.cae.wisc.edu/~ece533/images/airplane.png">
-          <img
-            style={{
-              height: '30px',
-              marginTop: '-6px',
-              width: '100px',
-              marginRight: '300px'
-            }}
-            src="http://homepages.cae.wisc.edu/~ece533/images/airplane.png"
-          ></img>
-        </a>
+        <img
+          style={{
+            marginTop: '-6px',
+            width: '110px',
+            marginRight: '300px'
+          }}
+          src="images/jupyterLogoRectangle.svg"
+        ></img>
         <Body2Text style={bodyTextStyle('home', props)}>
           <a href="#" style={nonTextDecorated}>
             Home
