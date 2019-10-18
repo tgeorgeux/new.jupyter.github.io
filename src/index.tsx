@@ -26,11 +26,13 @@ import FlexRow from './components/FlexRow';
 import LineBreak from './components/LineBreak';
 import ContentBlock from './components/ContentBlock';
 import Navbar from './components/Navbar';
+import NavHeader from './components/NavHeader';
 
 // code
 ReactDOM.render(
   <div>
     <Navbar current="home" />
+    <NavHeader />
     <ContentBlock>
       <HeadlineSection
         header="Free, open source tools"
