@@ -21,29 +21,7 @@ function WebpageDemo(): JSX.Element {
   return (
     <div>
       <Navbar current="home" />
-      <HeadlineSection
-        image={ImageTypes.leadership}
-        imageLocation="right"
-        imageStyle={{ height: '350px' }}
-        header="Leadership"
-        body=""
-      >
-        <Body1Text>
-          Today, Perez serves as the organization’s leader. Granger oversees all
-          the operations and logistics.
-        </Body1Text>
-        <Body1Text>
-          A team of core contributors makes up the Steering Council. They help
-          ensure the long-term success of the project.
-        </Body1Text>
-        <Button
-          style={{ marginTop: '16px' }}
-          onClick={console.log}
-          mode={ButtonMode.Contained}
-        >
-          Learn More
-        </Button>
-      </HeadlineSection>
+
       <TinySection
         textAlign="right"
         header="Scientific computing"
