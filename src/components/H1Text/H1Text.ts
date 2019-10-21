@@ -6,6 +6,7 @@ const H1Text = styled.h1`
   line-height: 116px;
   letter-spacing: -1.5px;
   font-weight: 300;
+  margin-bottom: 32px;
 `;
 
 export default H1Text;

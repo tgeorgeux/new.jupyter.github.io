@@ -6,6 +6,7 @@ const Subtitle1Text = styled.div`
   line-height: 44px;
   letter-spacing: 0.15px;
   font-weight: 300;
+  margin-bottom: 32px;
 `;
 
 export default Subtitle1Text;

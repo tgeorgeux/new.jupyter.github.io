@@ -22,7 +22,6 @@ function NavHeader(props: NavHeaderProps): JSX.Element {
 
   const h1Style: CSSProperties = {
     marginTop: '40px',
-    marginBottom: '32px',
     color: '#f37726'
   };
 
@@ -38,7 +37,7 @@ function NavHeader(props: NavHeaderProps): JSX.Element {
         <H1Text style={h1Style}>{props.headline}</H1Text>
       </div>
       {props.subheadline && (
-        <Subtitle1Text style={{ marginTop: '-16px', marginBottom: '32px' }}>
+        <Subtitle1Text style={{ marginTop: '-16px' }}>
           {props.subheadline}
         </Subtitle1Text>
       )}

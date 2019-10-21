@@ -6,6 +6,7 @@ const H6Text = styled.h6`
   line-height: 24px;
   letter-spacing: 0.15px;
   font-weight: 500;
+  margin-bottom: 16px;
 `;
 
 export default H6Text;
