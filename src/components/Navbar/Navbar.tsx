@@ -1,5 +1,6 @@
 import React, { CSSProperties } from 'react';
 import Body2Text from '../Body2Text';
+import { Link } from 'react-router-dom';
 
 export type CurrentPages =
   | 'home'
@@ -36,7 +37,6 @@ export default function Navbar(props: NavbarProps): JSX.Element {
       <div
         style={{
           display: 'flex',
-          justifyContent: 'flex-end',
           width: '960px',
           marginLeft: 'auto',
           marginRight: 'auto',
@@ -52,29 +52,29 @@ export default function Navbar(props: NavbarProps): JSX.Element {
           src="images/jupyterLogoRectangle.svg"
         ></img>
         <Body2Text style={bodyTextStyle('home', props)}>
-          <a href="#" style={nonTextDecorated}>
+          <Link style={nonTextDecorated} to="/">
             Home
-          </a>
+          </Link>
         </Body2Text>
         <Body2Text style={bodyTextStyle('about', props)}>
-          <a href="#" style={nonTextDecorated}>
+          <Link style={nonTextDecorated} to="/about">
             About
-          </a>
+          </Link>
         </Body2Text>
         <Body2Text style={bodyTextStyle('technologies', props)}>
-          <a href="#" style={nonTextDecorated}>
+          <Link style={nonTextDecorated} to="/technologies">
             Technologies
-          </a>
+          </Link>
         </Body2Text>
         <Body2Text style={bodyTextStyle('documentation', props)}>
-          <a href="#" style={nonTextDecorated}>
+          <Link style={nonTextDecorated} to="/documentation">
             Documentation
-          </a>
+          </Link>
         </Body2Text>
         <Body2Text style={bodyTextStyle('community', props)}>
-          <a href="#" style={nonTextDecorated}>
+          <Link style={nonTextDecorated} to="/community">
             Community
-          </a>
+          </Link>
         </Body2Text>
       </div>
     </div>
