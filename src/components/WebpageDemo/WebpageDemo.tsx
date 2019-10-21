@@ -1,5 +1,4 @@
 import Navbar from '../Navbar';
-import HeadlineSection, { ImageTypes } from '../HeadlineSection';
 import TinySection from '../TinySection';
 import Button, { ButtonMode, ButtonText } from '../Button';
 import NavFooter from '../NavFooter';

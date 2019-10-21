@@ -6,37 +6,22 @@ import Button, { ButtonMode } from '../Button';
 function NavHeader(props: HTMLAttributes<HTMLDivElement>): JSX.Element {
   const headerStyle: CSSProperties = {
     width: '100%',
-    height: '310px',
+    height: '340px',
     background: '#093656',
-    color: 'white'
-  };
-
-  const headerTextStyle: CSSProperties = {
-    textAlign: 'center'
+    color: 'white',
+    textAlign: 'center',
+    marginBottom: '-40px'
   };
 
   const h1Style: CSSProperties = {
-    paddingTop: '16px',
-    marginTop: '0px',
-    marginBottom: '20px',
-    paddingRight: '20px'
-  };
-
-  const h1ColorStyle: CSSProperties = {
-    paddingTop: '16px',
-    marginTop: '0px',
-    marginBottom: '20px',
-    color: '#f37726'
+    marginTop: '40px',
+    marginBottom: '32px'
   };
 
   const headerFlexStyle: CSSProperties = {
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'center'
-  };
-
-  const bodyTextStyle: CSSProperties = {
-    marginBottom: '2px'
   };
 
   const buttonStyle: CSSProperties = {
@@ -46,19 +31,20 @@ function NavHeader(props: HTMLAttributes<HTMLDivElement>): JSX.Element {
 
   return (
     <div style={headerStyle} {...props}>
-      <div style={headerTextStyle}>
-        <div style={headerFlexStyle}>
-          <H1Text style={h1Style}>compute </H1Text>
-          <H1Text style={h1ColorStyle}> together</H1Text>
-        </div>
-        <Body1Text style={bodyTextStyle}>
-          Project Jupyter offers hundreds of open source computing tools.
-        </Body1Text>
-        <Body1Text>Built by and for a worldwide community.</Body1Text>
-        <Button style={buttonStyle} mode={ButtonMode.Text}>
-          FIND A TOOL
-        </Button>
+      <div style={headerFlexStyle}>
+        <H1Text style={h1Style}>
+          compute <span style={{ color: '#f37726' }}>together</span>
+        </H1Text>
       </div>
+      <div style={headerFlexStyle}>
+        <Body1Text style={{ width: '480px' }}>
+          Project Jupyter offers hundreds of open source computing tools. Built
+          by and for a worldwide community.
+        </Body1Text>
+      </div>
+      <Button style={buttonStyle} mode={ButtonMode.Text}>
+        FIND A TOOL
+      </Button>
     </div>
   );
 }
