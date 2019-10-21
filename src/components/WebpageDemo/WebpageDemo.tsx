@@ -21,7 +21,11 @@ function WebpageDemo(): JSX.Element {
   return (
     <div>
       <Navbar current="home" />
-      <NavHeader />
+      <NavHeader
+        headline="documentation"
+        subheadline="Get the help you need"
+        body="Looking for documentation on a particular tool? Check out our list of repositories below."
+      />
       <TinySection
         textAlign="right"
         header="Scientific computing"

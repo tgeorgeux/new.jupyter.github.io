@@ -12,7 +12,11 @@ function WebpageAbout(): JSX.Element {
   return (
     <div>
       <Navbar current="about" />
-      <NavHeader />
+      <NavHeader
+        headline="about"
+        subheadline="Building an open future"
+        body="We are a non-profit organization dedicated to making science more open and transparent."
+      />
       <ContentBlock>
         <HeadlineSection
           header="Our history"

@@ -1,9 +1,16 @@
 import React, { HTMLAttributes, CSSProperties } from 'react';
 import H1Text from '../H1Text';
 import Body1Text from '../Body1Text';
-import Button, { ButtonMode } from '../Button';
+import Subtitle1Text from '../Subtitle1Text';
 
-function NavHeader(props: HTMLAttributes<HTMLDivElement>): JSX.Element {
+export interface NavHeaderProps extends HTMLAttributes<HTMLDivElement> {
+  children?: JSX.Element | JSX.Element[];
+  headline: string | JSX.Element;
+  subheadline?: string;
+  body: string;
+}
+
+function NavHeader(props: NavHeaderProps): JSX.Element {
   const headerStyle: CSSProperties = {
     width: '100%',
     height: '340px',
@@ -15,7 +22,8 @@ function NavHeader(props: HTMLAttributes<HTMLDivElement>): JSX.Element {
 
   const h1Style: CSSProperties = {
     marginTop: '40px',
-    marginBottom: '32px'
+    marginBottom: '32px',
+    color: '#f37726'
   };
 
   const headerFlexStyle: CSSProperties = {
@@ -24,27 +32,22 @@ function NavHeader(props: HTMLAttributes<HTMLDivElement>): JSX.Element {
     justifyContent: 'center'
   };
 
-  const buttonStyle: CSSProperties = {
-    marginTop: '16px',
-    color: '#093656'
-  };
-
   return (
     <div style={headerStyle} {...props}>
       <div style={headerFlexStyle}>
-        <H1Text style={h1Style}>
-          compute <span style={{ color: '#f37726' }}>together</span>
-        </H1Text>
+        <H1Text style={h1Style}>{props.headline}</H1Text>
       </div>
+      {props.subheadline && (
+        <Subtitle1Text style={{ marginTop: '-16px', marginBottom: '32px' }}>
+          {props.subheadline}
+        </Subtitle1Text>
+      )}
       <div style={headerFlexStyle}>
-        <Body1Text style={{ width: '480px' }}>
-          Project Jupyter offers hundreds of open source computing tools. Built
-          by and for a worldwide community.
-        </Body1Text>
+        <Body1Text style={{ width: '480px' }}>{props.body}</Body1Text>
       </div>
-      <Button style={buttonStyle} mode={ButtonMode.Text}>
-        FIND A TOOL
-      </Button>
+      <div style={{ ...headerFlexStyle, marginTop: '16px' }}>
+        {props.children}
+      </div>
     </div>
   );
 }

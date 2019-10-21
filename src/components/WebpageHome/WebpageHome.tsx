@@ -13,7 +13,19 @@ function WebpageHome(): JSX.Element {
   return (
     <div>
       <Navbar current="home" />
-      <NavHeader />
+      <NavHeader
+        body="Project Jupyter offers hundreds of open source computing tools. Built
+      by and for a worldwide community."
+        headline={
+          <span>
+            <span style={{ color: 'white' }}>compute</span> together
+          </span>
+        }
+      >
+        <Button style={{ color: '#093656' }} mode={ButtonMode.Text}>
+          Find a tool
+        </Button>
+      </NavHeader>
       <ContentBlock>
         <HeadlineSection
           header="Free, open source tools"
