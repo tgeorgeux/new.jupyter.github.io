@@ -32,14 +32,10 @@ export default function TinySection(props: TinySectionProps): JSX.Element {
         </div>
       )}
       <div>
-        <H4Text
-          style={{ color: '#4D4D4D', marginTop: '0', marginBottom: '16px' }}
-        >
+        <H4Text style={{ color: '#4D4D4D', marginTop: '0' }}>
           {props.header}
         </H4Text>
-        <Subtitle2Text style={{ color: '#616161', marginBottom: '16px' }}>
-          {props.body}
-        </Subtitle2Text>
+        <Subtitle2Text style={{ color: '#616161' }}>{props.body}</Subtitle2Text>
         {props.children}
       </div>
     </div>

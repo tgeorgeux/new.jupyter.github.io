@@ -5,6 +5,7 @@ const H3Text = styled.h3`
   font-size: 48px;
   line-height: 59px;
   font-weight: 500;
+  margin-bottom: 32px;
 `;
 
 export default H3Text;

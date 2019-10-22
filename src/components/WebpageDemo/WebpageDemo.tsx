@@ -1,5 +1,4 @@
 import Navbar from '../Navbar';
-import HeadlineSection, { ImageTypes } from '../HeadlineSection';
 import TinySection from '../TinySection';
 import Button, { ButtonMode, ButtonText } from '../Button';
 import NavFooter from '../NavFooter';
@@ -16,12 +15,17 @@ import Body2Text from '../Body2Text';
 import CaptionText from '../CaptionText';
 import OverlineText from '../OverlineText';
 import React from 'react';
+import NavHeader from '../NavHeader';
 
 function WebpageDemo(): JSX.Element {
   return (
     <div>
       <Navbar current="home" />
-
+      <NavHeader
+        headline="documentation"
+        subheadline="Get the help you need"
+        body="Looking for documentation on a particular tool? Check out our list of repositories below."
+      />
       <TinySection
         textAlign="right"
         header="Scientific computing"

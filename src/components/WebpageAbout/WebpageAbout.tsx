@@ -1,18 +1,22 @@
 import Navbar from '../Navbar';
 import ContentBlock from '../ContentBlock';
 import HeadlineSection, { ImageTypes } from '../HeadlineSection';
-import FlexRow from '../FlexRow';
-import TinySection from '../TinySection';
 import LineBreak from '../LineBreak';
 import Button, { ButtonMode } from '../Button';
 import NavFooter from '../NavFooter';
 import React from 'react';
 import Body1Text from '../Body1Text';
+import NavHeader from '../NavHeader';
 
 function WebpageAbout(): JSX.Element {
   return (
     <div>
       <Navbar current="about" />
+      <NavHeader
+        headline="about"
+        subheadline="Building an open future"
+        body="We are a non-profit organization dedicated to making science more open and transparent."
+      />
       <ContentBlock>
         <HeadlineSection
           header="Our history"

@@ -6,6 +6,7 @@ const Subtitle2Text = styled.div`
   line-height: 19px;
   letter-spacing: 0.15px;
   font-weight: 400;
+  margin-bottom: 16px;
 `;
 
 export default Subtitle2Text;

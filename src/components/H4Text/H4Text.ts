@@ -6,6 +6,7 @@ const H4Text = styled.h4`
   line-height: 42px;
   letter-spacing: 0.25px;
   font-weight: 500;
+  margin-bottom: 16px;
 `;
 
 export default H4Text;

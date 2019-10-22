@@ -6,6 +6,7 @@ const H2Text = styled.h2`
   line-height: 73px;
   letter-spacing: -0.5px;
   font-weight: 300;
+  margin-bottom: 32px;
 `;
 
 export default H2Text;
