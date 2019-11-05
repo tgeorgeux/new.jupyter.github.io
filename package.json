@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "test": "npm run check-types && npm run lint",
+    "start": "npm run dev",
     "dev": "npm run check-types && webpack-dev-server --open",
     "build": "npm run check-types && webpack --mode production",
     "lint": "eslint './src/**/*.{ts,tsx}'",
