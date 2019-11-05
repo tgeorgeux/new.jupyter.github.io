@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "test": "npm run check-types && npm run lint",
-    "start": "webpack-dev-server --port 8080 --host 0.0.0.0 --disable-host-check",
+    "start": "webpack-dev-server --port $PORT --host 0.0.0.0 --disable-host-check",
     "dev": "npm run check-types && webpack-dev-server --open",
     "build": "npm run check-types && webpack --mode production",
     "lint": "eslint './src/**/*.{ts,tsx}'",
