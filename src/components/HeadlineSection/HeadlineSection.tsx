@@ -4,7 +4,7 @@ import Body1Text from '../Body1Text';
 import ImageTypes from './ImageTypes';
 
 export interface TinySectionProps {
-  header: string;
+  header?: string;
   body?: string;
   image?: ImageTypes;
   imageStyle?: CSSProperties;
