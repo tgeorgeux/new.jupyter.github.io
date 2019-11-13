@@ -46,7 +46,9 @@ function WebpageAbout(): JSX.Element {
           </Body1Text>
           <Button
             style={{ marginTop: '16px' }}
-            onClick={console.log}
+            onClick={(): void => {
+              window.location.href = '/technologies';
+            }}
             mode={ButtonMode.Contained}
           >
             Learn More
@@ -98,7 +100,9 @@ function WebpageAbout(): JSX.Element {
           </Body1Text>
           <Button
             style={{ marginTop: '16px' }}
-            onClick={console.log}
+            onClick={(): void => {
+              window.location.href = '/community';
+            }}
             mode={ButtonMode.Contained}
           >
             Learn More
@@ -132,7 +136,11 @@ function WebpageAbout(): JSX.Element {
           </Body1Text>
           <Button
             style={{ marginTop: '16px' }}
-            onClick={console.log}
+            onClick={(): void => {
+              window.open(
+                'https://numfocus.salsalabs.org/donate-to-jupyter/index.html'
+              );
+            }}
             mode={ButtonMode.Contained}
           >
             Donate

@@ -22,7 +22,13 @@ function WebpageHome(): JSX.Element {
           </span>
         }
       >
-        <Button style={{ color: '#093656' }} mode={ButtonMode.Text}>
+        <Button
+          style={{ color: '#093656' }}
+          mode={ButtonMode.Text}
+          onClick={(): void => {
+            window.location.href = '/technologies';
+          }}
+        >
           Find a tool
         </Button>
       </NavHeader>
@@ -125,7 +131,12 @@ function WebpageHome(): JSX.Element {
             textAlign="center"
             body="Join the millions of others who are taking Project Jupyter to the next level."
           >
-            <Button onClick={console.log} mode={ButtonMode.Contained}>
+            <Button
+              onClick={(): void => {
+                window.location.href = '/community';
+              }}
+              mode={ButtonMode.Contained}
+            >
               Get Involved
             </Button>
           </TinySection>
@@ -135,7 +146,12 @@ function WebpageHome(): JSX.Element {
             textAlign="center"
             body="Meet with members of the community at one of our upcoming events."
           >
-            <Button onClick={console.log} mode={ButtonMode.Contained}>
+            <Button
+              onClick={(): void => {
+                window.location.href = '/community';
+              }}
+              mode={ButtonMode.Contained}
+            >
               Learn more
             </Button>
           </TinySection>
@@ -161,7 +177,14 @@ function WebpageHome(): JSX.Element {
             textAlign="center"
             body="Make a donation and help us achieve our goal of open science for all."
           >
-            <Button onClick={console.log} mode={ButtonMode.Contained}>
+            <Button
+              onClick={(): void => {
+                window.open(
+                  'https://numfocus.salsalabs.org/donate-to-jupyter/index.html'
+                );
+              }}
+              mode={ButtonMode.Contained}
+            >
               Get Involved
             </Button>
           </TinySection>
@@ -171,7 +194,12 @@ function WebpageHome(): JSX.Element {
             textAlign="center"
             body="What started out as a single effort has exploded into a revolution."
           >
-            <Button onClick={console.log} mode={ButtonMode.Contained}>
+            <Button
+              onClick={(): void => {
+                window.location.href = '/about';
+              }}
+              mode={ButtonMode.Contained}
+            >
               Learn more
             </Button>
           </TinySection>
