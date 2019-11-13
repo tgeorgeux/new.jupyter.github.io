@@ -42,6 +42,15 @@ function WebpageHome(): JSX.Element {
             textAlign="right"
           />
         </FlexRow>
+        <img
+          style={{
+            height: '540px',
+            display: 'block',
+            paddingRight: '50px',
+            margin: '-170px auto -260px auto'
+          }}
+          src={'images/planetwithmoons.svg'}
+        ></img>
         <FlexRow style={{ marginLeft: '60px', marginTop: '120px' }}>
           <TinySection
             header="Machine Learning"
