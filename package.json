@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "description": "This is the playground for the new Jupyter.org. Expect great, or at least slightly better than mediocre, things.",
   "private": true,
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "pre-push": "npm test"
+    }
+  },
   "scripts": {
     "test": "npm run check-types && npm run lint",
     "start": "webpack-dev-server --port $PORT --host 0.0.0.0 --disable-host-check",
@@ -39,6 +45,7 @@
     "eslint-config-react": "^1.1.7",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.16.0",
+    "husky": "^3.0.9",
     "prettier": "^1.18.2",
     "react-router-dom": "^5.1.2",
     "typescript": "^3.6.3",
