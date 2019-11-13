@@ -19,7 +19,7 @@ function WebpageTechnologies(): JSX.Element {
       <NavHeader
         headline="technologies"
         subheadline="Create and share with the world"
-        body="All of our technologies are free and open source, and support interactive computing across all programming languages."
+        body="Our technologies are free and open source, and support interactive computing across all programming languages."
       />
       <ContentBlock>
         <HeadlineSection
@@ -37,7 +37,7 @@ function WebpageTechnologies(): JSX.Element {
             the programming language of your choice.
           </Body1Text>
           <Body1Text>
-            Annotate your findings with tenx and visuals and enable others to
+            Annotate your findings with text and visuals and enable others to
             build off of your work.
           </Body1Text>
           <Button
@@ -62,7 +62,7 @@ function WebpageTechnologies(): JSX.Element {
           <H4Text>Jupyter Lab</H4Text>
           <H5Text>The new interface for Jupyter Notebooks</H5Text>
           <Body1Text>
-            Use test editors, terminals, and data file viewers side by side with
+            Use text editors, terminals, and data file viewers side by side with
             notebooks in a tabbed work area.
           </Body1Text>
           <Body1Text>
@@ -110,47 +110,43 @@ function WebpageTechnologies(): JSX.Element {
           image={ImageTypes.moon1}
           imageLocation="left"
           header="Our technology"
-          body="The three main layers of our technology are Kernals,
+          body="The three main layers of our technology are kernels,
           servers, and frontends. Each layer is interchangeable."
         />
         <FlexRow style={{ marginLeft: '60px', marginTop: '16px' }}>
-          <H4Text style={{ fontSize: '36px', color: '#f37626' }}>A</H4Text>
           <TinySection
-            header="Kernals"
-            body="The core of Jupyter technology. Kernals can exist for any programming language, such as Python and R."
+            header="Kernels"
+            body="The core of Jupyter technology. Kernels can exist for any programming language, such as Python and R."
           />
           <TinySection
             header="Servers"
-            body="The middleware that connects kernals to frontend applications. 
-            Servers can be local or run in the cloud"
+            body="The middleware that connects kernels to frontend applications.
+            Servers can be local or run in the cloud."
             textAlign="right"
           />
         </FlexRow>
         <img
           style={{
-            width: '401px',
-            height: '350px',
+            height: '600px',
             display: 'block',
-            margin: '0 auto'
+            margin: '-140px auto -130px auto'
           }}
           src={'images/theTechnology.svg'}
         ></img>
-        <FlexRow style={{ marginLeft: '60px', marginTop: '120px' }}>
+        <FlexRow style={{ marginLeft: '60px' }}>
           <TinySection
             header="Frontends"
-            body="The applications used for interactive computing. Popular 
-            frontends include JupyterLab and the Jupyter Notebook"
+            body="The applications used for interactive computing. Popular
+            frontends include JupyterLab and the Jupyter Notebook."
           />
           <TinySection
             header="Standards"
             body="A set of open standards that anyone can leverage.
-            Build your own technology based on the Jupyter framework"
+            Build your own technology based on the Jupyter framework."
             textAlign="right"
           />
         </FlexRow>
       </ContentBlock>
-      <LineBreak />
-
       <NavFooter />
     </div>
   );
