@@ -15,7 +15,11 @@ export enum ImageTypes {
   partnerships = 'partnerships',
   theTechnology = 'theTechnology',
   visionForTheFuture = 'visionForTheFuture',
-  worldwideCommunity = 'worldwideCommunity'
+  worldwideCommunity = 'worldwideCommunity',
+  iconIndustry = 'iconIndustry',
+  iconResearch = 'iconResearch',
+  iconAcademia = 'iconAcademia',
+  iconJournalism = 'iconJournalism'
 }
 
 export default ImageTypes;

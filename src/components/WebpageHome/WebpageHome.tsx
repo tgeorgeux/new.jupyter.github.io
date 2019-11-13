@@ -69,24 +69,24 @@ function WebpageHome(): JSX.Element {
         />
         <FlexRow style={{ marginBottom: '80px' }}>
           <TinySection
-            icon="industry"
+            icon={ImageTypes.iconIndustry}
             header="Industry"
             body="Powering entire platforms at Google, IBM, and Microsoft."
           />
           <TinySection
-            icon="research"
+            icon={ImageTypes.iconResearch}
             header="Research"
             body="Assisting in Nobel Prize-winning discoveries."
           />
         </FlexRow>
         <FlexRow>
           <TinySection
-            icon="academia"
+            icon={ImageTypes.iconAcademia}
             header="Academia"
             body="Teaching students at Harvard, Columbia, and MIT."
           />
           <TinySection
-            icon="journalism"
+            icon={ImageTypes.iconJournalism}
             header="Journalism"
             body={
               <span>
