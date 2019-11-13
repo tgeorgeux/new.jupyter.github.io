@@ -62,6 +62,7 @@ function WebpageAbout(): JSX.Element {
           imageStyle={{
             marginTop: '-70px',
             width: '380px',
+            marginBottom: '-90px',
             marginRight: '70px'
           }}
         >
@@ -80,7 +81,11 @@ function WebpageAbout(): JSX.Element {
         <HeadlineSection
           image={ImageTypes.leadership}
           imageLocation="right"
-          imageStyle={{ height: '400px', marginTop: '-20px' }}
+          imageStyle={{
+            height: '400px',
+            marginBottom: '-100px',
+            marginTop: '-20px'
+          }}
           header="Leadership"
         >
           <Body1Text>
