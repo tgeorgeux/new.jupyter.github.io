@@ -41,13 +41,25 @@ function NavFooter(props: HTMLAttributes<HTMLDivElement>): JSX.Element {
   return (
     <div style={footerStyle} {...props}>
       <div style={footerIconRowStyle}>
-        <a href="mailto:projectjupyter@gmail.com">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="mailto:projectjupyter@gmail.com"
+        >
           <img style={footerIconStyle} src="images/mail.svg"></img>
         </a>
-        <a href="https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fjupyter.org%2F&ref_src=twsrc%5Etfw&region=follow_link&screen_name=ProjectJupyter&tw_p=followbutton">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fjupyter.org%2F&ref_src=twsrc%5Etfw&region=follow_link&screen_name=ProjectJupyter&tw_p=followbutton"
+        >
           <img style={footerCenterIconStyle} src="images/twitter.svg"></img>
         </a>
-        <a href="https://github.com/jupyter">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/jupyter"
+        >
           <img style={footerIconStyle} src="images/github.svg"></img>
         </a>
       </div>
